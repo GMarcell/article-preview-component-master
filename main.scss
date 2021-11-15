@@ -61,9 +61,9 @@ main {
 }
 
 .profile {
-    display: none;
-    grid-template-columns: auto auto auto;
-    padding: 5px 25px 15px;
+    display: grid;
+    grid-template-columns: 80px auto 30px;
+    padding: 20px;
     margin: auto;
     .profileimage {
         vertical-align: middle;
@@ -96,10 +96,10 @@ main {
 }
 
 .sharesection {
-    display: grid;
+    display: none;
     grid-template-columns: 80px auto 30px;
     background-color: $VeryDarkGrayishBlue;
-    padding: 20px;
+    padding: 21px;
     margin: auto;
     .word {
         margin: auto;

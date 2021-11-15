@@ -152,4 +152,35 @@ main {
 .hide {
   display: none;
 }
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 800px;
+    height: 300px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 350px 450px;
+        grid-template-columns: 350px 450px;
+  }
+  #drawer {
+    height: 100%;
+  }
+  .lowerpart {
+    padding: 25px;
+  }
+  .content {
+    padding: 0;
+  }
+  .content h1 {
+    font-size: 22px;
+  }
+  .content p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 25px;
+  }
+  .profile {
+    padding: 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */

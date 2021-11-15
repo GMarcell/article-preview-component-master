@@ -139,3 +139,32 @@ main {
 .hide {
     display: none;
 }
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 800px;
+        height: 300px;
+        display: grid;
+        grid-template-columns: 350px 450px;
+    }
+    #drawer {
+        height: 100%;
+    }
+    .lowerpart {
+        padding: 25px;
+    }
+    .content {
+        padding: 0;
+        h1 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 15px;
+            margin-bottom: 30px;
+            line-height: 25px;
+        }
+    }
+    .profile {
+        padding: 0;
+    }
+}

@@ -12,3 +12,122 @@ $LightGrayishBlue: hsl(210,
 46%,
 95%);
 $fontSize: 13px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $fontSize;
+    font-family: 'Manrope', sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $LightGrayishBlue;
+}
+
+.container {
+    background-color: white;
+    width: 320px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#drawer {
+    width: 100%;
+    height: 170px;
+}
+
+.content {
+    padding: 25px;
+    h1 {
+        font-weight: 00;
+        font-size: 17px;
+        color: $VeryDarkGrayishBlue;
+    }
+    p {
+        color: $DesaturatedDarkBlue;
+        margin-top: 10px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5px 25px 15px;
+    margin: auto;
+    .profileimage {
+        vertical-align: middle;
+        margin: auto;
+        img {
+            border-radius: 100%;
+            width: 40px;
+        }
+    }
+    .profiledetail {
+        h2 {
+            font-size: 15px;
+            color: $VeryDarkGrayishBlue;
+        }
+        p {
+            color: $DesaturatedDarkBlue;
+        }
+    }
+    .sharebutton {
+        margin: auto;
+        button {
+            border: none;
+            border-radius: 100%;
+            padding: 7px;
+            img {
+                width: 15px;
+            }
+        }
+    }
+}
+
+.sharesection {
+    display: none;
+    grid-template-columns: 80px auto 30px;
+    background-color: $VeryDarkGrayishBlue;
+    padding: 20px;
+    margin: auto;
+    .word {
+        margin: auto;
+        p {
+            font-size: 13px;
+            letter-spacing: 3px;
+            color: $DesaturatedDarkBlue;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: left;
+        }
+    }
+    .socialmedia {
+        margin: auto 70px auto auto;
+        img {
+            margin: auto 5px;
+        }
+    }
+    .sharebutton {
+        margin: auto;
+        button {
+            border: none;
+            border-radius: 100%;
+            padding: 7px;
+            img {
+                filter: brightness(80%);
+                width: 15px;
+            }
+        }
+    }
+}

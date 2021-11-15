@@ -57,8 +57,7 @@ main {
 }
 
 .profile {
-  display: -ms-grid;
-  display: grid;
+  display: none;
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
   padding: 5px 25px 15px;
@@ -99,7 +98,8 @@ main {
 }
 
 .sharesection {
-  display: none;
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: 80px auto 30px;
       grid-template-columns: 80px auto 30px;
   background-color: #48556a;
@@ -142,5 +142,14 @@ main {
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
   width: 15px;
+}
+
+.active {
+  display: -ms-grid;
+  display: grid;
+}
+
+.hide {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

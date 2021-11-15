@@ -1,19 +1,17 @@
-// function sharefunction() {
-//     var sharesection = document.getElementById("sharesction");
-//     if (sharesection.style.display === "none") {
-//         profile.style.display = "grid";
-//     } else {
-//         profile.style.display = "none";
-//     }
-// }
-
-function sharefunction1() {
-    var profile = document.getElementById("profile");
-    var sharesection = document.getElementById("sharesction");
-    console.log("masuk");
-    if (profile.style.display === "none") {
-        sharesection.style.display = "grid";
-    } else {
-        sharesection.style.display = "none";
+function sharefunction() {
+    if (document.getElementById("sharesection").classList.contains("active")) {
+        document.getElementById("sharesection").classList.remove("active");
+        document.getElementById("profile").classList.remove("hide");
     }
+    document.getElementById("profile").classList.toggle("active");
+    document.getElementById("sharesection").classList.toggle("hide")
+}
+
+function profilefunction() {
+    if (document.getElementById("profile").classList.contains("active")) {
+        document.getElementById("profile").classList.remove("active");
+        document.getElementById("sharesection").classList.remove("hide");
+    }
+    document.getElementById("profile").classList.toggle("hide")
+    document.getElementById("sharesection").classList.toggle("active");
 }

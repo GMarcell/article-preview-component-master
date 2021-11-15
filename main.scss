@@ -61,7 +61,7 @@ main {
 }
 
 .profile {
-    display: grid;
+    display: none;
     grid-template-columns: auto auto auto;
     padding: 5px 25px 15px;
     margin: auto;
@@ -96,7 +96,7 @@ main {
 }
 
 .sharesection {
-    display: none;
+    display: grid;
     grid-template-columns: 80px auto 30px;
     background-color: $VeryDarkGrayishBlue;
     padding: 20px;
@@ -130,4 +130,12 @@ main {
             }
         }
     }
+}
+
+.active {
+    display: grid;
+}
+
+.hide {
+    display: none;
 }

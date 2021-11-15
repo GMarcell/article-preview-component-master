@@ -1,11 +1,19 @@
-function sharefunction() {
-    var profile = document.getElementsByClassName("profile");
-    var sharesection = document.getElementsByClassName("sharesction");
-    if (sharesection.style.display === "none") {
+// function sharefunction() {
+//     var sharesection = document.getElementById("sharesction");
+//     if (sharesection.style.display === "none") {
+//         profile.style.display = "grid";
+//     } else {
+//         profile.style.display = "none";
+//     }
+// }
+
+function sharefunction1() {
+    var profile = document.getElementById("profile");
+    var sharesection = document.getElementById("sharesction");
+    console.log("masuk");
+    if (profile.style.display === "none") {
         sharesection.style.display = "grid";
-        profile.style.display = "none";
     } else {
         sharesection.style.display = "none";
-        profile.style.display = "grid";
     }
 }

@@ -182,5 +182,37 @@ main {
   .profile {
     padding: 0;
   }
+  .sharesection {
+    display: none;
+    padding: 15px;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    position: absolute;
+    border-radius: 10px;
+    top: 350px;
+    right: 215px;
+  }
+  .sharesection .word {
+    margin: auto 5px auto auto;
+  }
+  .sharesection .socialmedia {
+    margin: auto;
+  }
+  .sharesection .socialmedia img {
+    margin: auto 8px;
+  }
+  .sharesection .sharebutton {
+    display: none;
+  }
+  .sharesection .arrowdown {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #48556a;
+  }
 }
 /*# sourceMappingURL=main.css.map */

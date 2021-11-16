@@ -36,8 +36,13 @@ main {
     background-color: white;
     width: 320px;
     margin: 10px;
-    overflow: hidden;
+    position: relative;
     border-radius: 10px;
+}
+
+.upperimage {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
 }
 
 #drawer {
@@ -147,6 +152,9 @@ main {
         display: grid;
         grid-template-columns: 350px 450px;
     }
+    .upperimage {
+        border-radius: 10px 0 0 10px;
+    }
     #drawer {
         height: 100%;
     }
@@ -173,8 +181,8 @@ main {
         grid-template-columns: auto auto;
         position: absolute;
         border-radius: 10px;
-        top: 350px;
-        right: 215px;
+        top: 55%;
+        right: -60px;
         .word {
             margin: auto 5px auto auto;
         }
